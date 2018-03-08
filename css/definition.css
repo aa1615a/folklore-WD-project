@@ -1,0 +1,205 @@
+/* ------------------------------------------------------------ */
+/* imports and utilities */
+
+/* 3rd-party CSS files */
+@import 'vendor/h5bp-head.css';
+@import 'vendor/normalize.css';
+@import 'vendor/h5bp-tail.css';
+
+/* use a more intuitive box sizing model (http://is.gd/wNVjAo) */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* Scale down images and embedded videos so they don't overflow their parents */
+.resize { max-width: 100%; }
+
+/*	Development/layout aid. Remove the comments
+	on this rule in order to draw boxes around DIVs
+	and other elements used for layout. */
+/* 
+div, main, article, section, aside, hgroup, header, footer, address, nav {
+	border: 1px solid rgba(255,0,0,0.15) !important;
+	background: rgba(255,0,0,0.05) !important;		
+}
+*/
+
+
+/* ------------------------------------------------------------ */
+/* start project-specifc styles below this line */
+
+/*GLOBAL NAV */
+
+.dropbtn {
+    background-color: #F1F6F9;
+	color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    font-family: 'IM Fell Double Pica', Georgia, serif;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: red;
+	color: black;
+	font-size: 20px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+/*content*/
+
+body {
+	font-family: 'IM Fell Double Pica', Georgia, serif;
+	font-size: 18px;
+	line-height: 1.5em;
+	color: white;
+	background-color: #F1F6F9;
+	background-image: url("../img/foggy-forest2.jpg");
+	background-repeat: no-repeat;
+	background-size: 1300px 1200px;
+	background-position: top;
+}
+
+h1 {
+	font-family: 'IM Fell English', serif;
+	font-style: italic;
+	font-size: 50px;
+	text-align: center;
+	letter-spacing: 10px;
+	margin-bottom: 40px;
+	height: 60px;
+}
+
+h3 {
+	font-family: 'IM Fell English', serif;
+	font-size: 30px;
+	font-style: italic;
+	letter-spacing: 3px;
+}
+
+h4 {
+	font-family: 'IM Fell English', serif;
+	font-size: 20px;
+	letter-spacing: 3px;
+	font-style: italic;
+	margin-top: 5px;
+	margin-bottom: -10px;
+}
+
+p {
+	margin-left: 3em;
+}
+
+dl{
+	margin-left: 3em;
+}
+
+dt{
+	text-decoration: underline;
+	margin-top: 1em;
+}
+
+dd{
+	text-indent: 1.5em;
+}
+
+figcaption {
+	max-width: 250px;
+	margin-top: 8px;
+}
+
+b {
+	font-variant: small-caps;
+}
+
+blockquote {
+	font-style: italic;
+	font-size: 14px;
+	max-width: 500px;
+	margin-left: 5em;
+}
+
+/*	Generally, you will only want one container element in
+	the document, wrapping around the main content area. 
+	If you have more than one container, you are probably doing
+	something wrong. 	
+*/
+
+.container {
+	margin-top: 1em;
+	margin-right: auto;
+	margin-bottom: 1em;
+	margin-left: auto;
+	width: 90%;
+	max-width: 1200px;
+	padding: 2em;
+	background-color: black;
+	opacity: 0.8;
+}
+
+.img1 {
+	float: right;
+	margin: 1em 0em 1em 2em;
+	max-width: 350px;
+	font-size: 14px;
+}
+
+.img2 {
+	float: left;
+	margin: 1em 2em 1em 0em;
+	max-width: 300px;
+	font-size: 14px;
+}
+
+.img3 {
+	float: right;
+	margin: 1em 0em 1em 2em;
+	max-width: 350px;
+	font-size: 14px;
+}
+
+.tab {
+	margin-left: 80px;
+}
+/*
+.content{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column: auto;
+}
+
+.img {
+	grid-column: 3/4;
+	max-width: 300px;
+}
+*/
+
+
+
+

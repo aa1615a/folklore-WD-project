@@ -1,0 +1,75 @@
+/* ------------------------------------------------------------ */
+/* imports and utilities */
+
+/* 3rd-party CSS files */
+@import 'vendor/h5bp-head.css';
+@import 'vendor/normalize.css';
+@import 'vendor/h5bp-tail.css';
+
+/* use a more intuitive box sizing model (http://is.gd/wNVjAo) */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* Scale down images and embedded videos so they don't overflow their parents */
+.resize { max-width: 100%; }
+
+.mapscale
+{
+	max-width: max-content !important;
+}
+
+/*	Development/layout aid. Remove the comments
+	on this rule in order to draw boxes around DIVs
+	and other elements used for layout. */
+/* 
+div, main, article, section, aside, hgroup, header, footer, address, nav {
+	border: 1px solid rgba(255,0,0,0.15) !important;
+	background: rgba(255,0,0,0.05) !important;		
+}
+*/
+
+
+/* ------------------------------------------------------------ */
+/* start project-specifc styles below this line */
+
+body {
+	font-family: 'IM Fell Double Pica', Georgia, serif;
+	font-size: 16px;
+	line-height: 1.5em;
+	color: #222;
+	background-color: #161616;
+	background-image: url("../img/foggy-forest2.jpg");
+	background-repeat: no-repeat;
+	background-size: 1000px 800px;
+}
+
+h1 {
+	font-family: 'IM Fell English', serif;
+	font-style: italic;
+	font-size: 50px;
+	text-align: center;
+	color: white;
+}
+
+h3 {
+	color: red;
+	text-align: center;
+}
+/*	Generally, you will only want one container element in
+	the document, wrapping around the main content area. 
+	If you have more than one container, you are probably doing
+	something wrong. 	
+*/
+.container {
+	margin-top: 1em;
+	margin-right: auto;
+	margin-bottom: 1em;
+	margin-left: auto;
+	width: 90%;
+	max-width: 850px;
+	padding: 2em;
+	background:rgba(255,255,255, 0.7)
+}
+
+.map {
+	max-width: 800px;
+}
