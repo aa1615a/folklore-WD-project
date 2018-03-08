@@ -159,8 +159,7 @@ blockquote {
 	width: 90%;
 	max-width: 1200px;
 	padding: 2em;
-	background-color: black;
-	opacity: 0.8;
+	background:rgba(0,0,0, 0.7);
 }
 
 .img1 {
